@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot.dto;
+package com.jojoldu.book.springboot.web.dto;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
@@ -14,4 +14,5 @@ public class HelloResponseDtoTest {
         Assertions.assertThat(dto.getName()).isEqualTo(name);
         Assertions.assertThat(dto.getAmount()).isEqualTo(amount);
     }
+
 }
