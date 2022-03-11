@@ -1,5 +1,6 @@
 package com.jojoldu.book.springboot.domain.posts;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -19,9 +20,10 @@ public class Posts {
     private String content;
     private String author;
 
-    public Posts(long _id, String _title, String _author) {
-        this.id = _id;
+    @Builder
+    public Posts(String _title, String _content, String _author) {
         this.title = _title;
+        this.content = _content;
         this.author = _author;
     }
 }
