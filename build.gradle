@@ -30,6 +30,9 @@ dependencies {
     /*h2DataBase 추가*/
     implementation('com.h2database:h2')
     implementation('org.projectlombok:lombok')
+
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
+
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
